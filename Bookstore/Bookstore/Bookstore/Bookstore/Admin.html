@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Bookstore.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="Bookstore.js"></script>
+    <title> Admins</title>
+    <meta charset="utf-8" />
+
+    <script>
+        $(document).ready(function () {
+            $("#submit").click(function () {
+                var userName = $("#adminUsername").val();
+                var password = $("#adminPass").val();
+
+                if (userName == "" || password == "") {
+                    alert("Please enter valid credentials!");
+                } // end if
+            }); // end submit
+
+        }); // end doc ready
+    </script>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+            <li> <a href="Home.html"> HOME </a> </li>
+            <li> <a href="Admin.html"> Admins Click Here!</a> </li>
+        </ul>
+    </nav>
+
+    <h1> Admin Page</h1>
+
+    <h2> Login</h2>
+    <label> Username</label> <input type="text" id="adminUsername" />
+    <label> Password </label> <input type="text" id="adminPass"/>  <br /> <br />
+    <button id="submit"> Submit </button>
+
+</body>
+</html>

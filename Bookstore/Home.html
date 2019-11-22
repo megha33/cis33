@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Bookstore.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="Bookstore.js"></script>
+
+    <title>Home</title>
+    <script>
+        // this will be used to eventhandlers ONLY
+        $(document).ready(function () {
+
+            $("#btnYes").click(function () {
+                $("#user").css("visibility", "hidden");
+                $("#btnNo").css("visibility", "hidden");
+                $("#newUser").css("visibility", "visible");
+                $("#btnYes").css("visibility", "hidden");
+            }); // end yes eventhandler
+
+            $("#yesSub").click(function () { // submit button for the yes
+                var userName = $("#newUsername").val();
+                var password = $("#newPass").val();
+                var email = $("#newEmail").val();
+
+                if (userName == "") {
+                    alert("You must enter a username!");
+                } // end username validation
+
+                if (password == "") {
+                    alert("You must enter a password!");
+                } // end password validation
+
+                if (email == "") {
+                    alert("You must enter an email!");
+                } // end email validation
+            }); // end yesSub
+
+            $("#btnNo").click(function () {
+                $("#user").css("visibility", "hidden");
+                $("#btnNo").css("visibility", "hidden");
+                $("#btnYes").css("visibility", "hidden");
+                $("#returningUser").css("visibility", "visible");
+            }); // end no eventhandler
+
+            $("#no").click(function () { // submit button for the no
+                var userName = $("#returnUser").val();
+                var password = $("#returnPass").val();
+
+                if (userName == "") {
+                    alert("Please enter your username!");
+                } // end username validation
+
+                if (password == "") {
+                    alert("Please enter your password!");
+                } // end password validation
+
+                else { // user entered input - time to validate
+
+                }
+            }); // end noSub
+
+        }); // end document ready func
+
+    </script>
+</head>
+
+
+<body>
+    <nav>
+        <ul class="nav">
+            <li> <a href="Home.html"> HOME </a> </li>
+            <li> <a href="Admin.html"> Admins Click Here!</a> </li>
+            <li> <a href="myAccount.html"> My Account </a></li>
+        </ul>
+    </nav>
+
+    <h1> Welcome to the Online Bookstore!</h1>
+    <h3 id="user"> Are you a new user?</h3>
+
+    <button id="btnYes"> Yes</button>
+    <div id="newUser" style="visibility:hidden">
+        <h2> Create Account</h2> 
+        <label> Username</label> <input type="text" id="newUsername"/>
+        <label> Password </label> <input type="text" id="newPass" /> 
+        <label> Email Address </label> <input type="text"  id="newEmail"/> <br /> <br />
+
+        <button id="yesSub"> Submit </button>
+    </div>
+
+    <button id="btnNo"> No</button>
+    <div id="returningUser" style="visibility:hidden">
+        <h2> Login</h2>
+        <label> Username</label> <input type="text" id="returnUser" /> 
+        <label> Password </label> <input type="text" id="returnPass"/>  <br /> <br />
+        <button id="noSub"> Submit </button>
+    </div>
+    
+
+
+</body>
+</html>

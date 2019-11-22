@@ -1,0 +1,9 @@
+{
+  "name": "bookstore-node",
+  "version": "0.0.0",
+  "description": "BookstoreNode",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}

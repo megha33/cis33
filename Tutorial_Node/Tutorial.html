@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="tutorialSTYLE.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1> Node.JS!</h1>
+
+    <div id="description">
+        <h2> Introduction </h2>
+         <div>  Node.JS is an open source source environment that uses Javascript on the server. It uses Chrome's
+                V8 engine and is event-driven. It's commonly used create dynamic page content, collect data, and 
+                manipulate files & items in the database. Before you use Node, it MUST be initiated on the server 
+                otherwise it won't have any effect. </div>
+
+        <div id="commonApps">
+            <h2> Applications that use Node.JS</h2>
+            <ul>
+                <li> Ebay </li>
+                <li> Quizlet </li>
+                <li> Netflix</li>
+                <li> Paypal</li>
+                <li> LinkedIn </li>
+            </ul>
+        </div>
+
+        <div id="steps">
+            <h2> Tutorial</h2>
+            <div> First things first, in order to even use Node you have to download it. Let's get started... </div>
+            <ol>
+                <li> Download Node here: <a href="https://nodejs.org/en/"> Click Me! </a> </li>
+                <li> When the download is complete, run the installer.</li>
+                <li> Restart your computer to ensure that everything works properly.</li>
+            </ol>
+
+            <div> You can also install the node package manager. Node package manager contains respositories 
+                    for node packages/modules. Modules are similar to Javascript libraries. They contain a set of functions that you want to use 
+                    and include in your project.You can also access them through this link:
+                    <a href="search.nodejs.org">nodejs.org </a> Otherwise you can install it through the command line like so.. <br /><br />
+                    <img id="npminstall" src="Images/npminstall.JPG" alt="Screenshot of what your command line should look like."/> <br /> <br />
+
+                   After you see a success message at the end of the execution, go to the location where the packages would be installed. You 
+                    should have something that looks like this.. <br /> <br />
+                    <img id="npmPackages" src="Images/npmpackages.jpg" alt="Screenshot of some npm packages" />
+                    <br /> <br />
+                    These folders that you see are essentially examples of other applications that use node.  The benefit of having these packages is that 
+                    you can resuse that code, see different ways to solve a problem, and share code with other npm users. Think of it like GitHub.
+            </div>
+
+            <div id="code">
+                
+                <div id="step1">
+                    <br /> Now let's create our first Node application! Open up Visual Studio, create a new project, and add a HTML page. 
+                    <br /> <br /> We are going to load a page using the HTTP module and port number.
+                </div>
+
+
+                <div id="step2">
+                    Now, open up Visual Studio, create a new project, and add a javascript file by right-clicking on the project.
+                    <br /> <br />In the Javascript file, we will include the HTTP module by doing the following:
+                    <br /> <img src="Images/tut.jpg" /> <br />
+                    Require is used to retrieve the module that we will be using and a reference is getting stored in the const http.
+                    We will use const http to access the functions that are a part of the HTTP module.
+                </div>
+
+                <div id="step3">
+                    Now, let's create a server. 
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="additionalResources">
+            <h2> Additional Resources </h2>
+            <ul>
+                <li> <a href=" https://docs.npmjs.com/about-npm/"> Click to learn more about NPM</a> </li>
+                <li> <a href="https://www.codementor.io/ashish1dev/list-of-useful-nodejs-modules-du107mcv3"> Click to learn about other Node modules!</a></li>
+                <li> <a href="https://blog.burgettweb.net/2016/01/25/first-time-node-getting-started/"> Click for an in-depth tutorial on Node and creating tests</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>

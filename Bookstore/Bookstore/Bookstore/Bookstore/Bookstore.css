@@ -1,0 +1,25 @@
+﻿ul.nav li a {
+  text-decoration: none;
+    display: block;
+    clear: both;
+    margin: 0px;
+    margin-top: -3px;
+    padding: 0px;
+    min-width: 100%;
+    margin-bottom: 8px;
+    height: 12px;
+    font-size: 20px;
+}
+.nav {
+   display: block;
+    text-align: center;
+    background-color: lightblue;
+    width: 100%;
+    padding: 6px;
+    font-size: 18px;
+    margin-top: -.5%;
+}
+
+a:link {
+  text-decoration: none;
+}
